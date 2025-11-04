@@ -25,7 +25,10 @@ envs:
        "ENV": "production"
 
 ###
-
+ports:
+###
+       8000
+###
 Prediction / inference : 
 ###
       python predict.py --url <url> --token <serving token> --image bag.png
