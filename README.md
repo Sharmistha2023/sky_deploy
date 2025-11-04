@@ -21,3 +21,9 @@ envs:
        "ENV": "production"
 
 ###
+
+Prediction / inference : 
+###
+      python predict.py --url <url> --token <serving token> --image bag.png
+
+###
