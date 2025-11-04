@@ -1,3 +1,10 @@
+mounts : 
+###
+      "source": "/home/sharmistha-choudhury/sky_deploy"
+      "target": "/mnt/apps"
+
+###
+
 setup command : 
 ###
           conda create -n serving python=3.12 && conda activate serving && pip install fastapi uvicorn mlflow==2.12.2 pillow numpy && pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118      
@@ -5,7 +12,7 @@ setup command :
 ###
 command : 
 ###
-         conda activate serving && python /mnt/apps/trial.py --model-path $MODEL_DIR    
+         conda activate serving && python /mnt/apps/script.py --model-path $MODEL_DIR    
 
 ###
 envs:
