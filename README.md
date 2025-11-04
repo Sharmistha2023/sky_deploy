@@ -15,6 +15,10 @@ command :
          conda activate serving && python /mnt/apps/script.py --model-path $MODEL_DIR    
 
 ###
+Readiness Probe Path
+###
+             /health
+###
 envs:
 ###
        "MODEL_DIR": "/mnt/ml"
